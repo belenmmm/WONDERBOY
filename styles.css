@@ -1,0 +1,528 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background-color: #0B170AE5
+}
+
+h1{
+  text-align:center;
+  font-family: 'Press Start 2P', cursive;
+  padding-bottom:20px;
+  padding-top:20px;
+  color:#118AFC;
+
+}
+
+.container{
+	display:grid;
+	width:100%;
+	grid-template-columns: repeat(31, 18px);
+	grid-template-rows:repeat(35, 18px);
+  justify-content: center;
+
+}
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+  .container{
+  display:grid;
+  width:100%;
+  grid-template-columns: repeat(31, 28px);
+    grid-template-rows: repeat(35, 28px);
+  justify-content: center;
+
+}
+    
+  }
+
+  @media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px) 
+and (orientation : landscape) {
+  .container{
+  display:grid;
+  width:100%;
+  grid-template-columns: repeat(31, 12px);
+    grid-template-rows: repeat(35, 12px);
+  justify-content: center;
+
+}
+
+}
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px) 
+and (orientation : portrait) {
+.container{
+  display:grid;
+  width:100%;
+  grid-template-columns: repeat(31, 28px);
+    grid-template-rows: repeat(35, 28px);
+  justify-content: center;
+
+}
+
+  }
+
+.inner-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.light-orange{--main-bg-color: #F8A850; 
+  background-color: var(--main-bg-color);}
+.orange{--main-bg-color:#F85400;
+background-color: var(--main-bg-color);}
+.black{--main-bg-color:#000000;
+background-color: var(--main-bg-color);}
+.green{--main-bg-color:#00A800;
+background-color: var(--main-bg-color);}
+.light-green{--main-bg-color:#00FC00;
+background-color: var(--main-bg-color);}
+.brown-green{--main-bg-color:#505400;
+background-color: var(--main-bg-color);}
+.yellow{--main-bg-color:#F8FC00;
+background-color: var(--main-bg-color);}
+.brown-yellow{--main-bg-color:#F8A800;
+background-color: var(--main-bg-color);}
+.brown{--main-bg-color:#A85450;
+background-color: var(--main-bg-color);}
+.white{--main-bg-color:#F8FCF8;
+background-color: var(--main-bg-color);}
+.skin{--main-bg-color:#F8A8A8;
+background-color: var(--main-bg-color);}
+.lips{--main-bg-color:#F80000;
+background-color: var(--main-bg-color);}
+
+
+.change-to-lightblue{
+  -webkit-animation-name: color-lightblue;
+  animation-name: color-lightblue;
+  -webkit-animation-duration: 6s;
+  animation-duration: 6s;
+  -webkit-animation-direction: linear;
+  animation-direction: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+  background-color: var(--main-bg-color);
+  
+}
+
+@keyframes color-lightblue {
+  0% {
+    transform:rotateX(0deg);
+    background-color: var(--main-bg-color);
+    
+  }
+
+  40% {
+    transform:rotateX(180deg);
+    background-color: #55C7DF
+  }
+   70% {
+    transform:rotateX(180deg);
+    background-color: #55C7DF
+  }
+
+  
+  100% {
+    transform:rotateX(0deg);
+    background-color: var(--main-bg-color);
+
+  }
+ 
+}
+
+.change-to-violet{
+   -webkit-animation-name: color-violet;
+  animation-name: color-violet;
+  -webkit-animation-duration: 6s;
+  animation-duration: 6s;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+  background-color: var(--main-bg-color);
+  /*animation-fill-mode: forwards;*/
+}
+
+
+@keyframes color-violet {
+   0% {
+    transform:rotateX(0deg);
+    background-color: var(--main-bg-color);
+    
+  }
+
+  40% {
+    transform:rotateX(180deg);
+    background-color: #4D4A9F
+  }
+   70% {
+    transform:rotateX(180deg);
+    background-color: #4D4A9F
+  }
+
+  
+  100% {
+    transform:rotateX(0deg);
+    background-color: var(--main-bg-color);
+
+  }
+}
+
+.change-to-white{
+   -webkit-animation-name: color-white;
+  animation-name: color-white;
+  -webkit-animation-duration: 6s;
+  animation-duration: 6s;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+  background-color: var(--main-bg-color);
+  /*animation-fill-mode: forwards;*/
+}
+
+@keyframes color-white {
+   0% {
+    transform:rotateX(0deg);
+    background-color: var(--main-bg-color);
+    
+  }
+
+  40% {
+    transform:rotateX(180deg);
+    background-color: #F8FCF8
+  }
+   70% {
+    transform:rotateX(180deg);
+    background-color: #F8FCF8
+  }
+
+  
+  100% {
+    transform:rotateX(0deg);
+    background-color: var(--main-bg-color);
+
+  }
+}
+
+.change-to-yellow{
+   -webkit-animation-name: color-yellow;
+  animation-name: color-yellow;
+  -webkit-animation-duration: 6s;
+  animation-duration: 6s;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+  background-color: var(--main-bg-color);
+  /*animation-fill-mode: forwards;*/
+}
+
+@keyframes color-yellow {
+  0% {
+    transform:rotateX(0deg);
+    background-color: var(--main-bg-color);
+    
+  }
+
+  40% {
+    transform:rotateX(180deg);
+    background-color: #F8FC00
+  }
+   70% {
+    transform:rotateX(180deg);
+    background-color: #F8FC00
+  }
+
+  
+  100% {
+    transform:rotateX(0deg);
+    background-color: var(--main-bg-color);
+
+  }
+}
+
+.change-to-brown{
+   -webkit-animation-name: color-brown;
+  animation-name: color-brown;
+  -webkit-animation-duration: 6s;
+  animation-duration: 6s;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+  background-color: var(--main-bg-color);
+  /*animation-fill-mode: forwards;*/
+}
+
+@keyframes color-brown {
+  0% {
+    transform:rotateX(0deg);
+    background-color: var(--main-bg-color);
+    
+  }
+
+  40% {
+    transform:rotateX(180deg);
+    background-color: #B46D34
+  }
+   70% {
+    transform:rotateX(180deg);
+    background-color: #B46D34
+  }
+
+  
+  100% {
+    transform:rotateX(0deg);
+    background-color: var(--main-bg-color);
+
+  }
+}
+
+.change-to-black{
+   -webkit-animation-name: color-black;
+  animation-name: color-black;
+  -webkit-animation-duration: 6s;
+  animation-duration: 6s;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+  background-color: var(--main-bg-color);
+  /*animation-fill-mode: forwards;*/
+}
+
+@keyframes color-black {
+   0% {
+    transform:rotateX(0deg);
+    background-color: var(--main-bg-color);
+    
+  }
+
+  40% {
+    transform:rotateX(180deg);
+    background-color: #000000
+  }
+   70% {
+    transform:rotateX(180deg);
+    background-color: #000000
+  }
+
+  
+  100% {
+    transform:rotateX(0deg);
+    background-color: var(--main-bg-color);
+
+  }
+}
+
+.change-to-skin{
+   -webkit-animation-name: color-skin;
+  animation-name: color-skin;
+  -webkit-animation-duration: 6s;
+  animation-duration: 6s;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+  background-color: var(--main-bg-color);
+  /*animation-fill-mode: forwards;*/
+}
+
+@keyframes color-skin {
+    0% {
+    transform:rotateX(0deg);
+    background-color: var(--main-bg-color);
+    
+  }
+
+  40% {
+    transform:rotateX(180deg);
+    background-color: #F8A8A8
+  }
+   70% {
+    transform:rotateX(180deg);
+    background-color: #F8A8A8
+  }
+
+  
+  100% {
+    transform:rotateX(0deg);
+    background-color: var(--main-bg-color);
+
+  }
+}
+
+.change-to-magenta{
+   -webkit-animation-name: color-magenta;
+  animation-name: color-magenta;
+  -webkit-animation-duration: 6s;
+  animation-duration: 6s;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+  background-color: var(--main-bg-color);
+  /*animation-fill-mode: forwards;*/
+}
+
+@keyframes color-magenta {
+     0% {
+    transform:rotateX(0deg);
+    background-color: var(--main-bg-color);
+    
+  }
+
+  40% {
+    transform:rotateX(180deg);
+    background-color: #D31B60
+  }
+   70% {
+    transform:rotateX(180deg);
+    background-color: #D31B60
+  }
+
+  
+  100% {
+    transform:rotateX(0deg);
+    background-color: var(--main-bg-color);
+
+  }
+}
+
+.change-to-grey{
+   -webkit-animation-name: color-grey;
+  animation-name: color-grey;
+  -webkit-animation-duration: 6s;
+  animation-duration: 6s;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+  background-color: var(--main-bg-color);
+  /*animation-fill-mode: forwards;*/
+}
+@keyframes color-grey {
+  0% {
+    transform:rotateX(0deg);
+    background-color: var(--main-bg-color);
+    
+  }
+
+  40% {
+    transform:rotateX(180deg);
+    background-color: #D0C7A6
+  }
+   70% {
+    transform:rotateX(180deg);
+    background-color: #D0C7A6
+  }
+
+  
+  100% {
+    transform:rotateX(0deg);
+    background-color: var(--main-bg-color);
+
+  }
+}
+
+.change-to-green{
+   -webkit-animation-name: color-green;
+  animation-name: color-green;
+  -webkit-animation-duration: 6s;
+  animation-duration: 6s;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+  background-color: var(--main-bg-color);
+  /*animation-fill-mode: forwards;*/
+}
+
+@keyframes color-green {
+  0% {
+    transform:rotateX(0deg);
+    background-color: var(--main-bg-color);
+    
+  }
+
+  40% {
+    transform:rotateX(180deg);
+    background-color: #00A800
+  }
+   70% {
+    transform:rotateX(180deg);
+    background-color: #00A800
+  }
+
+  
+  100% {
+    transform:rotateX(0deg);
+    background-color: var(--main-bg-color);
+
+  }
+}
+
+.change-to-lightbrown{
+   -webkit-animation-name: color-lightbrown;
+  animation-name: color-lightbrown;
+  -webkit-animation-duration: 6s;
+  animation-duration: 6s;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+  background-color: var(--main-bg-color);
+  /*animation-fill-mode: forwards;*/
+}
+
+@keyframes color-lightbrown {
+  0% {
+    transform:rotateX(0deg);
+    background-color: var(--main-bg-color);
+    
+  }
+
+  40% {
+    transform:rotateX(180deg);
+    background-color: #C77228
+  }
+   70% {
+    transform:rotateX(180deg);
+    background-color: #C77228
+  }
+
+  
+  100% {
+    transform:rotateX(0deg);
+    background-color: var(--main-bg-color);
+
+  }
+}
